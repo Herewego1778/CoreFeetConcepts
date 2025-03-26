@@ -16,4 +16,4 @@ Key features will include:
 * Data validation
 * HTML and PDF conversion 
 
-For license information, please see [LICENSE.txt](LICENSE)
+For license information, please see [LICENSE](LICENSE)
