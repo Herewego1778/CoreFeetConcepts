@@ -406,6 +406,6 @@ This project also drew upon the guidance and resources provided by:
 
 ## License
 
-For license information, please see [LICENSE](LICENSE)
+For license information, please see [LICENSE](LICENSE.txt)
 
 **Note:** The name "CoreFeetConcepts" may be subject to change in the future, if this software is adopted by a larger research or study project.8
