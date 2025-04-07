@@ -1,0 +1,36 @@
+# Metadata Template: Definitions and Terms
+FileName: "big_o_notation.yml"   # (Required) Specific file name for this definition
+FilePath: "path/to/"  # (Required) Full path to the image
+Title: "Big O Notation"         # (Required) The term or definition itself
+Language: "" # Programming language, spoken language, etc.
+DateCreated: "2025-04-03"         # (Optional) Date this definition was documented
+LastModified: "2025-04-05"        # (Optional) Date of last modification
+TutorialID: "DEF-CS-BIGO-01"     # (Optional) Unique ID for referencing
+Term: "Big O Notation"          # (Optional, but useful if Title is slightly different)
+Discipline: "Computer Science"   # (Optional) The field or subject area
+Category: "Algorithms"         # (Optional) More specific category
+Keywords:                       # (Optional) Keywords for search and retrieval
+  - "algorithm analysis"
+  - "time complexity"
+  - "asymptotic notation"
+Definition: |                     # (Required) The definition text (multi-line)
+  Big O notation is a mathematical notation that describes the limiting 
+  behavior of a function when the argument tends towards a particular 
+  value or infinity. In computer science, it is used to classify 
+  algorithms according to their running time or space requirements.
+Formula:                         # (Optional) If there's a primary formula
+  Representation: "T(n) = O(f(n))"
+  Explanation: |                 # (Optional) Explanation of the formula
+    Where T(n) is the time taken by an algorithm for an input size of n, 
+    and f(n) is a function that describes the growth rate of the time.
+Images:                          # (Optional) Related images (e.g., graphs, diagrams)
+  - ImageID: "big_o_graph_1"
+    FilePath: "images/big_o_graph.png"
+    AltText: "Graph of common Big O complexities"
+  - ImageID: "big_o_table_1"
+    FilePath: "images/big_o_table.jpg"
+    AltText: "Table of Big O complexities and examples"
+RelatedContent:                   # (Optional) Links to other definitions, articles, etc.
+  - "time_complexity.yml"
+  - "algorithm.yml"
+  - "https://en.wikipedia.org/wiki/Big_O_notation"

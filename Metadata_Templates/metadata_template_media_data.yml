@@ -1,0 +1,92 @@
+# Metadata for Media Files. Here you can store multiple images or other file types according to a entire tutorial, project, or course, and document it all to better retrieve files later. 
+FileName: "project_media_map.yml"       # (Required) Specific file name
+FilePath: "path/to/"  # (Required) Full path to the image
+Title: "Media Map"          # (Recommended) Title of the image
+ProjectName: "MarketingCampaign2024"  # (Optional) Project it belongs to
+CourseName: ""  # Name of course or related courses
+TutorialID: "" # Unique ID (e.g., TUT-Language-Topic-Number, TUT-PYTHON-LINSPACE-01, TUT-YYYY-NNN) for easy sorting and searching
+Description: "A brief description of the media mapping." # (Optional)
+Category: "Photography"        # (Optional) Category of the image
+Language: "" # Programming language, spoken language, etc.
+Keywords:                     # (Optional) Keywords for search
+  - "nature"
+  - "landscape"
+  - "sunset"
+DateCreated: "2024-03-15"     # (Optional) Date image was created
+LastModified: "2024-03-20"    # (Optional) Date metadata was last modified
+Section 1: # Section 1 can have spaces in the name
+  - Title: "Section Title"
+  - Images:
+      - FilePath: "path/to/image.jpg"   # Required: Path to the image file
+        Title: "Document Title"
+        Description: "A brief description of the image."  # Optional: Description of the image
+        Category: "General"             # Category of the image
+        Keywords:                       # List of keywords for search
+          - "keyword1"
+          - "keyword2"
+        MediaType: "image"              # Type of media (e.g., "image") 
+        ResourceType: "Photograph"       # Specific type of image (e.g., "Photograph", "Icon") 
+        UsedInExperience: "ProjectA"     # Project or experience where the image is used 
+        RelatedContent:                 # List of related content (can be other file paths) 
+          - "path/to/related_doc.yml"
+        Dimensions: # Example 700x600
+          - Width: 700
+            Height: 600
+            # Add more dimensions as needed
+      - FilePath: "another/path/image2.png"
+        Title: "Document Title"
+        Description: "A brief description of the image."  # Optional: Description of the image
+        Category: "Promotional"
+        Keywords:
+          - "product"
+          - "marketing"
+        MediaType: "image"
+        ResourceType: "Advertisement"
+        UsedInExperience: "Website"
+        RelatedContent:
+        Dimensions: # Example 700x600
+          - Width: 700
+            Height: 600
+            # Add more dimensions as needed
+      
+      # Add more images as needed
+  - PDFs:
+      - FilePath: "another/path/tutorial.pdf"
+        Title: "Document Title"
+        Description: "A brief description of the image."  # Optional: Description of the image
+        Category: "Promotional"
+        Keywords:
+          - "product"
+          - "marketing"
+        MediaType: "PDF"
+        ResourceType: "Advertisement"
+        UsedInExperience: "Website"
+        RelatedContent:
+          - "path/to/video.yml"
+        Dimensions: # How many pages, table of contents
+      # Add more PDFs as needed
+  - Videos:
+      - FilePath: "another/path/video.mp4"
+        Title: "Document Title"
+        Description: "Description of the video."  # Optional: Description of the video
+        Category: "Promotional"
+        Keywords:
+          - "product"
+          - "marketing"
+        MediaType: "Video"
+        ResourceType: ""
+        UsedInExperience: ""
+        RelatedContent:
+          - "path/to/video.yml"
+          - "path/to/related_doc.yml"
+        Dimensions: # Example 700x600
+          - Width: 700
+            Height: 600
+            Length: 30  # In seconds
+            # Add more dimensions as needed
+      # Add more videos as needed
+  - Definitions:
+      - "First word"
+      - "Second word"
+      # Add more definitions as needed
+

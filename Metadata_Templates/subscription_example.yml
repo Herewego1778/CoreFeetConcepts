@@ -1,0 +1,14 @@
+# TutorialID: CoreFeetConcept-TEMPLATE-006
+# This is an example source of data that can use YAML anchors to provide automated content # driven articles
+# Subscription Templates (Store variations)
+SubscriptionTemplates:
+  AWS: &aws_subscription
+    Provider: Amazon
+    SubscriptionType: Monthly
+    Cost: 25  # Store as a number (easier for calculations)
+    RenewalDate: 2025-03-15
+  Azure: &azure_subscription # Example of another subscription
+    Provider: Microsoft
+    SubscriptionType: Annual
+    Cost: 100
+    RenewalDate: 2025-06-01

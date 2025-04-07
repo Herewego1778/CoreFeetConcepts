@@ -1,0 +1,43 @@
+# TutorialID: CoreFeetConcept-TEMPLATE-001
+# Example YAML metadata structure that might maintain several themes at once.
+Title: "Advanced CSS Techniques"
+Description: "Exploring advanced CSS concepts and techniques."
+Keywords: "CSS, styling, layout, responsive design"
+Author: "Your Name"
+Header_title: "Advanced CSS"
+Footer_message: "Style with precision."
+CSS_theme: modern # Specify the theme here
+Content: |
+    <div class="advanced-css-container">
+        <h2>CSS Grid Layout</h2>
+        <p>CSS Grid provides a powerful two-dimensional layout system.</p>
+    </div>
+
+Themes:
+  light: |
+    body {
+      font-family: sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    nav {
+      background-color: #e0e0e0;
+    }
+  dark: |
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #333;
+      color: #f8f8f8;
+    }
+    nav {
+      background-color: #555;
+    }
+  modern: |
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f0f8ff;
+      color: #444;
+    }
+    nav {
+      background-color: #add8e6;
+    }

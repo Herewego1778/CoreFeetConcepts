@@ -1,0 +1,59 @@
+# TutorialID: CoreFeetConcept-TEMPLATE-005
+# All keys must have a empty string "" if the value is empty
+# script_dynamic_documentation_template is best used to dynamically document content from a source file that stores specific content
+
+FileName: "" # Specific file name of current file
+FilePath: "" # Path to the file (essential) - e.g., "path/to/my/file.md"
+Location: "" # Physical location, if applicable, remote, On_Location, or Interaction_Notes
+Category: # List of categories and categorized keys# Tuts
+  - "" # Tuts
+  - "" # Notes
+  - "" # Py
+Keywords: #  List of keywords (essential)
+  - "" # Python
+  - "" # Lists
+  - "" # Files
+  - "" # Parent Directory
+  - "" # File Management
+  - "" # Folders, empty path, or creation
+ResourceType: "" # Specific categorization ("Documentation," "CodeExample", "NewsArticle", "Data Manipulation", "File Management", "Tutorial")
+MediaType: "" # Clarifies the type of the resource ("video," "image," "pdf," "code" is the best MediaType for scripts)  Use with ResourceType. Examples of Application types is a metadata template
+Title: "" # Title of the content
+Language: "" # Programming language, spoken language, etc.
+Description: "" # Brief description of the content
+TutorialID: "" # Unique ID (e.g., TUT-Language-Topic-Number, TUT-PYTHON-LINSPACE-01, TUT-YYYY-NNN) for easy sorting and searching
+Level: "" # Beginner, Intermediate, Advanced, Course Level
+Developer: ""  # If different from Author (e.g., company)
+Publisher: ""  # In case it was a specific company that published the manual, book, or video
+ISBN: ""       # ISBN (for books)
+Website: ""    # Related website URL, Use https:// for URLs whenever possible.
+CourseName: ""  # Name of course or related courses
+ProjectName: "" # Specific project or related to courses
+Author: "" # Your Name
+Date: "" # Date of creation/publication (ISO 8601)
+LastModified: ""  # Date of last modification (ISO 8601)
+UsedInExperience: "" # Projects/experiences where used (can include ProjectName, CourseName)
+RelatedContent: # List of paths to related YAML files (subscriptions, buildings, hardware, trips)
+ - "" # "subscriptions/aws_subscription.yml"
+ - "" # "buildings/building_a.yml"
+ - "" # "hardware_D.yml"
+ - "" # "trip_A.yml"
+RelatedOrdinance: "" # Related ordinance information (links or references)
+RelatedTutorials: "" # List of TutorialIDs of related tutorials (links or references)
+RelatedDefinitions: # Reminder to use relative paths as shown above
+  - "" # linspace()_python.md
+  - "" # library_numpy_python.md
+Duration: ""  # How many pages, time of video, or length of course, how many lines of code?
+Version: "" # Version number (if applicable)
+
+# You want to keep links to images and URL's well defined with context before you proceed to enter content or update 
+# Best to keep current links here at the top of the page instead of searching any further 
+
+Sources:  # For scripts and other code files
+
+Links:  # These sections store the link and image data. Each link and image is given a key
+
+Images: 
+
+# Content (Table of Contents) List of Dictionaries: The Content key now holds a list. Each item in the list is a dictionary
+Content: | # Multi-line string 

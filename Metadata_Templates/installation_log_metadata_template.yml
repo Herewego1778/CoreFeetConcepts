@@ -1,0 +1,76 @@
+installation_log:
+  - tutorial_id: "android-sdk-install-001" # Unique ID for this installation
+    category: "Android Development"
+    keywords:
+      - "Android SDK"
+      - "adb"
+      - "sdkmanager"
+      - "Java"
+      - "PATH environment"
+    used_in_experience:
+      - "Mobile App Development"
+      - "Command-Line Tools"
+    related_content:
+      - "Android Studio Setup"
+      - "Building Android Apps"
+      - "Java Development"
+    project_name: "Android Development Environment Setup" # If applicable
+    course_name: "Android Development Fundamentals" # If applicable
+    software: "Android SDK (Software Development Kit)"
+    description: "A set of tools, libraries, documentation, code samples, and processes required to build and test applications for the Android operating system. The SDK is usually managed through Android Studio."
+    download_link: "https://developer.android.com/tools/releases/platform-tools"
+    license_link: "https://developer.android.com/license?_gl=1*9ubjz5*_up*MQ..&gclid=Cj0KCQjw16O_BhDNARIsAC3i2GA9KaTbYf3mwW_UNX4bjf7gJ3WKUltSpw0MuS3ESIgIfj3OLE_od_MaAm0-EALw_wcB&gclsrc=aw.ds&gbraid=0AAAAAC-IOZkY-LPXb1FkWNd8yq6-La6HH"
+    downloaded_files:
+      - name: "platform-tools-latest-windows.zip"
+        size: "6.80 MB"
+      - name: "commandlinetools-win-13114758_latest.zip"
+        size: "136 MB"
+    downloaded_file_path: "C:\\Users\\unico\\Downloads"
+    version: "" # Or specify if known
+    disk_space: "" # Or specify if known
+    download_date: "2025-03-28"
+    installation_date: "2025-03-28"
+    folder_path: "C:\\Android\\sdk" # Custom Location
+    installation_issues: |
+      This comes as two zip files. You need the command-line tools that are part of the Android SDK. These include tools for managing SDK packages, emulators, and build processes. And you need the Platform tools, package primarily contains adb and fastboot, which are essential for device communication and low-level operations.
+    installation_steps:
+      - step: "Create a directory C:\\Android\\sdk"
+      - step: "Extract commandlinetools-win-13114758_latest.zip into the C:\\Android\\sdk"
+        notes: "Important: The zip file will likely extract into a subdirectory (e.g., C:\\Android\\sdk\\cmdline-tools). Make sure to note the exact location of the extracted tools."
+      - step: "Extract platform-tools-latest-windows.zip into the C:\\Android\\sdk. This will create a C:\\Android\\sdk\\platform-tools subdirectory."
+      - step: "Add to System PATH (Strongly Recommended)"
+        sub_steps:
+          - step: "Open the Windows Start Menu and search for 'environment variables.'"
+          - step: "Select 'Edit the system environment variables.'"
+          - step: "Click 'Environment Variables...'"
+          - step: "In the 'System variables' section, find the 'Path' variable and click 'Edit...'"
+          - step: "Click 'New' and add the following paths:"
+            sub_steps:
+              - step: "C:\\Android\\sdk\\cmdline-tools\\latest\\bin (or the correct path to the bin directory within your extracted cmdline-tools folder)"
+              - step: "C:\\Android\\sdk\\platform-tools"
+          - step: "Click 'OK' on all open windows."
+          - note: "Note: If you extracted the command line tools to a location other than C:\\Android\\sdk, adjust the paths accordingly."
+      - step: "Verify Installation"
+        sub_steps:
+          - step: "Open a new Command Prompt or PowerShell window. (If you had one open before adding to PATH, close and reopen it for the changes to take effect.)"
+          - step: "Verify adb: Type adb --version and press Enter. If adb is installed correctly, you'll see the version information."
+          - step: "Verify sdkmanager: Type sdkmanager --version and press enter. If the sdkmanager is installed correctly, you will see the version information."
+          - notes:
+              - "Administrator Privileges: You might need administrator privileges to modify the system PATH."
+              - "Correct Paths: Double-check the paths to the tools and platform-tools directories."
+              - "Updates: The Android SDK tools are updated regularly. You can use the sdkmanager tool to update them."
+              - "Documentation: Android's official documentation is a valuable resource for using the SDK tools."
+      - step: "Install Java 17 or Higher"
+        sub_steps:
+          - step: "Android SDK command-line tools: the sdkmanager requires Java version 17 or higher, and your system is either using an older version or not finding a suitable Java installation."
+          - step: "Set JAVA_HOME Environment Variable (If Necessary):"
+            sub_steps:
+              - step: "Open the Windows Start Menu and search for 'environment variables.'"
+              - step: "Select 'Edit the system environment variables.'"
+              - step: "Click 'Environment Variables...'"
+              - step: "In the 'System variables' section, click 'New...'"
+              - step: "For 'Variable name,' enter JAVA_HOME."
+              - step: "For 'Variable value,' enter the path to your Java installation directory (e.g., C:\\Program Files\\Java\\jdk-24)."
+              - step: "Click 'OK' on all open windows."
+              - step: "Verify: Open a new Command Prompt or PowerShell window and type echo %JAVA_HOME%. It should display the Java installation path."
+              - notes: "Notes: If the issue continues then check your Systems PATH Environment as Oracle Java installation creates a default PATH variable and this might be pointing to a old version of Java. Even if you've correctly set JAVA_HOME, sdkmanager might still be finding the older Java version in the javapath directory, which takes precedence over JAVA_HOME. Solution is to delete the PATH variable Oracle created and rely on the new JAVA_HOME variable."
