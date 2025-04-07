@@ -5,7 +5,7 @@
 # Script Name: set_base_directory.ps1
 
 # User must define the root path
-$rootPath = "C:\Users\unico\Documents"
+$rootPath = "C:\Users\[Your Name]\Documents"
 
 # User must define the name of the home directory
 $homeDir = "CS_Knowledge_Base"
