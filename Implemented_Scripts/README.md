@@ -137,7 +137,9 @@ The workflow consists of several steps, each utilizing specific scripts. These s
 **How to Run:** To list the contents of a specific folder, first copy `list_files_and_folders.ps1` into that folder. Then, right-click the script and select "Run with PowerShell".
 
 #### `rename_activity_files_folderkey.ps1` (PowerShell)
-**Description**:  Processes YAML files, extracts folder paths from the FilePath metadata, and renames the files according to the name of the folder they are to be stored in or the FolderKey metadata found in the README of the corresponding folder.
+**Description**: Rename your YAML files based on their destination folder. This script is tailored for use while files are being worked on in the `Implemented_Structures\Activity` folder. If the `FilePath` metadata key is present, the script retrieves it's value to determine the file's intended directory. It then appends a unique identifier to the file name, derived from either:
+- The FolderKey metadata found in the README.md of the target folder.
+- The last four characters of the FolderKey metadata or the first four characters of the intended folder where the file will be saved.
 
 #### `rename_files_readme_key.py` (Python)
 **Description:** This script renames files in a target directory by appending the "FolderKey" from each folder's README.md or it will append the folder's name. It uses log_message() to log events to command_log.md, which is located in the basePath defined in current_dir.md.
