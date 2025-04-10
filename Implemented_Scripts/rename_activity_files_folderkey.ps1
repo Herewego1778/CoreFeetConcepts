@@ -1,6 +1,6 @@
-# Description: This script processes YAML files, extracts folder paths from the FilePath metadata, and
-#              renames the file according to the name of the folder it is to be stored in or the FolderKey metadata found in 
-#              the README with the corresponding folder.
+# Description: This script is specifically designed for use within the Implemented_Structures\Activity folder. This script 
+#              processes YAML files, extracts folder paths from the FilePath metadata, and renames the file according to the 
+#              name of the folder it is to be stored in or the FolderKey metadata found in the README within the intended folder.
 # Script Name: rename__activity_files_folderkey.ps1
 # TutorialID: CoreFeetConcept-PS-SCRIPT-009
 
