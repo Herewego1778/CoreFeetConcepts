@@ -9,7 +9,7 @@
 $basePathTemp = (Get-Content -Path "current_dir.md" -Raw).Trim()
 
 # Define the relative path to the Activity folder
-$activityRelativePath = "My_Projects\Project_Gemini\Implemented_Structures\Activity"
+$activityRelativePath = "My_Projects\CoreFeetConcepts\Implemented_Structures\Activity"
 
 # Combine the base path with the relative path to get the full path to the Activity folder
 $activityFolder = Join-Path $basePathTemp -ChildPath $activityRelativePath 
