@@ -11,10 +11,10 @@
 $basePathTemp = (Get-Content -Path "current_dir.md" -Raw).Trim()
 
 # Define the metadata relative path
-$metadataPath = Join-Path $basePathTemp -ChildPath "My_Projects\Project_Gemini\Metadata_Templates"
+$metadataPath = Join-Path $basePathTemp -ChildPath "My_Projects\CoreFeetConcepts\Metadata_Templates"
 
 # Define the path to the Activity folder where the templates will be copied
-$activityPath = Join-Path $basePathTemp -ChildPath "My_Projects\Project_Gemini\Implemented_Structures\Activity"
+$activityPath = Join-Path $basePathTemp -ChildPath "My_Projects\CoreFeetConcepts\Implemented_Structures\Activity"
 
 # Display the metadata path and activity path
 Write-Host "Metadata Path: $metadataPath"
