@@ -65,6 +65,8 @@ Definitions\Software_Engineering: DEFS-SE
 Definitions\Specialized_Platform_Development: DEFS-PLATFORM
 Definitions\Systems_Fundamentals: DEFS-SYS
 Definitions\Systems_Fundamentals\File_Formats: DEFS-SYS-FILES
+Developer_Resources: DEV-RES
+Developer_Resources\Documentation: DEV-RES-DOCS
 Equipment_Notes: EQUIP
 Equipment_Notes\Building_Properties: EQUIP-BUILD
 Equipment_Notes\Building_Properties\Building_A: EQUIP-BUILD-A
@@ -73,6 +75,13 @@ Equipment_Notes\Desks: EQUIP-DESKS
 Equipment_Notes\Hallways: EQUIP-HALLS
 Equipment_Notes\Inventory: EQUIP-INV
 Equipment_Notes\Racks: EQUIP-RACKS
+Equipment_Notes\SilverFox_Laptop: EQUIP-LAPTOP
+Equipment_Notes\SilverFox_Laptop\Installation_Logs: EQUIP-LAPTOP-LOGS
+Equipment_Notes\SilverFox_Laptop\OS_Environments: EQUIP-LAPTOP-OS
+Equipment_Notes\SilverFox_Laptop\OS_Environments\Linux_VM_Debian: EQUIP-LAPTOP-OS-LINUX
+Equipment_Notes\SilverFox_Laptop\OS_Environments\Windows11: EQUIP-LAPTOP-OS-WIN
+Equipment_Notes\SilverFox_Laptop\PATH_Variable_Snapshot: EQUIP-LAPTOP-PATH
+Equipment_Notes\SilverFox_Laptop\Software_Installers: EQUIP-LAPTOP-INSTALL
 Glossary: GLOSS
 Glossary\Abbreviations: GLOSS-ABBR
 Glossary\Acronyms: GLOSS-ACRON
@@ -138,6 +147,7 @@ My_Projects\Business: PROJECTS-BUS
 My_Projects\Healthcare: PROJECTS-HEALTH
 My_Projects\CoreFeetConcepts: PROJECTS-COREFEET
 My_Projects\CoreFeetConcepts\Ideas: PROJECTS-COREFEET-IDEAS
+My_Projects\CoreFeetConcepts\Ideas\CoreFeetConcepts_Video: PROJECTS-COREFEET-IDEAS-VIDEO
 My_Projects\CoreFeetConcepts\Ideas\Future_Scripts: PROJECTS-COREFEET-IDEAS-SCRIPTS
 My_Projects\CoreFeetConcepts\Implemented_Scripts: PROJECTS-COREFEET-SCRIPTS
 My_Projects\CoreFeetConcepts\Implemented_Scripts\Dir_Creation: PROJECTS-COREFEET-SCRIPTS-DIR
@@ -145,6 +155,8 @@ My_Projects\CoreFeetConcepts\Implemented_Structures: PROJECTS-COREFEET-STRUCTS
 My_Projects\CoreFeetConcepts\Implemented_Structures\Activity: PROJECTS-COREFEET-STRUCTS-ACT
 My_Projects\CoreFeetConcepts\Implemented_Structures\Event: PROJECTS-COREFEET-STRUCTS-EVENT
 My_Projects\CoreFeetConcepts\Implemented_Structures\Website: PROJECTS-COREFEET-STRUCTS-WEB
+My_Projects\CoreFeetConcepts\Implemented_Structures\Website\.firebase: PROJECTS-COREFEET-STRUCTS-WEB-FIREBASE
+My_Projects\CoreFeetConcepts\Implemented_Structures\Website\public: PROJECTS-COREFEET-STRUCTS-WEB-PUBLIC
 My_Projects\CoreFeetConcepts\Metadata_Templates: PROJECTS-COREFEET-TEMPLATES
 My_Projects\CoreFeetConcepts\Notes: PROJECTS-COREFEET-NOTES
 My_Projects\CoreFeetConcepts\OS_Environment: PROJECTS-COREFEET-OS
@@ -176,8 +188,12 @@ Tools_And_Applications: TOOLS
 Tools_And_Applications\Applications: TOOLS-APPS
 Tools_And_Applications\Applications\AI_Software_Development: TOOLS-APPS-AI
 Tools_And_Applications\Applications\Audiobooks: TOOLS-APPS-AUDIO
-Tools_And_Applications\Developers: TOOLS-DEVS
-Tools_And_Applications\Tutorials: TOOLS-TUTORIALS
+Tools_And_Applications\Applications\OCR: TOOLS-APPS-OCR
+Tools_And_Applications\Applications\Web_Browsers: TOOLS-APPS-WEB
+Tools_And_Applications\Applications\Word_Processors: TOOLS-APPS-WORD
+Tools_And_Applications\DBMS: TOOLS-DBMS
+Tools_And_Applications\Development: TOOLS-DEV
+Tools_And_Applications\Servers: TOOLS-SERV
 Tutorials: TUTORIALS
 Tutorials\Coding: TUTORIALS-CODING
 Tutorials\Coding\C: TUTORIALS-CODING-C

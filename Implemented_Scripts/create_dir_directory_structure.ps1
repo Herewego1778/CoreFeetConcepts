@@ -8,6 +8,7 @@ $folders = @(
     "README.md",
     "Books",
     "Definitions",
+    "Developer_Resources",
     "Equipment_Notes",
     "Glossary",
     "Hybrid_Remote",

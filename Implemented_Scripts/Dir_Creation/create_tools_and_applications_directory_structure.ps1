@@ -3,10 +3,16 @@
 # Script Name: create_tools_and_applications_directory_structure.ps1
 
 $folders = @(
+    "Applications",
     "Applications\AI_Software_Development",
     "Applications\Audiobooks",
-    "Tutorials",
-    "Developers",
+    "Applications\Media_Software"
+    "Applications\OCR",
+    "Applications\Web_Browsers",
+    "Applications\Word_Processors",
+    "DBMS",
+    "Development",
+    "Servers"
     "README.md"
 )
 
